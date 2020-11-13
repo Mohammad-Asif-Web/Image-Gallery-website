@@ -1,0 +1,403 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+/*=default font size is 16 px, 
+but we converted it to rem, 
+then coverted to percent,and its 
+used in html attribute below=*/
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	text-rendering: optimizeLegibility;
+}
+
+/*=====HEADER SECTION=========*/
+header{
+	width: 100%;
+	height: auto;
+	background: #102f4e;
+	color: #bcd1de;
+	margin-top: -13px;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+header .row h1{
+	font-size: 40px;
+	font-weight: 200;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+header .row .col-md-12 span{
+	font-weight: 100px;
+	font-size: 10px;
+}
+
+.row .sidenav{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 15px 40px;
+	padding: 10px;
+}
+.row .sidenav .bar{
+	background-color: rgba(255,255,255, 0.8);
+	text-align: left;
+	font-size: 20px;
+	background: #102f4e;
+}
+ .row .sidenav .bar:hover{
+ 	background-color: #0e1d387a;
+ 	color: #ff8827;
+ 	transform: rotate(2deg);
+ 	transition: .5s;
+ 	cursor: pointer;
+ }
+.row .sidenav .bar h6{
+	font-size: 16px;
+	font-weight: 200;
+}
+.row .sidenav .bar p{
+	font-size: 10px;
+}
+hr{
+	border: 1px solid #668096;
+}
+
+/*======CAROUSEL SECTION=========*/
+.banner{
+	width: 100%;
+	height: auto;
+	background: #102f4e;
+}
+.banner h2{
+	font-size: 70px;
+	font-weight: 500;
+	color: #3e83bc;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  padding: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*====================*/
+.work{
+	width: 100%;
+	height: auto;
+	background: #bcd1de;
+}
+.work .box{
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+.work .box .sub-box{
+	width: 210px;
+	height: auto;
+	padding: 10px;
+	background: #bcd1de;
+	border-radius: 10px;
+	box-shadow:  6px 6px 10px -1px rgb(0 0 0 / 0.15),
+				-6px -6px 10px -1px rgb(255 255 255 / 0.7);
+	border: 1px solid rgb(0 0 0 / 0);
+	transition: transform 0.5s;
+}
+.work .box .sub-box h5{
+	font-size: 18px;
+	font-weight: 200;
+	margin-bottom: 10px;
+	color: #555b5e;
+}
+.work .box .sub-box .box-in{
+	display: flex;
+}
+.work .box .sub-box .box-in img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.work .box .sub-box .box-in p{
+	margin-left: 10px;
+	text-align: justify;
+}
+
+
+/*========PORTFOLIO===========*/
+.service{
+	width: 100%;
+	height: auto;
+	background: #102f4e;
+}
+.service .sub-service{
+	padding: 50px;
+}
+.service .sub-service h3{
+	font-size: 70px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+.service .sub-service .service-in{
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-in .service-all{
+	width: 30%;
+	height: 150px;
+	position: relative;
+	margin-left: 2.5%;
+	margin-top: 2%;
+	border: 3px solid #a5cee0;
+	border-radius: 8px;
+}
+.service-in .service-all img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*============CONTACT===========*/
+.contact{
+	width: 100%;
+	height: auto;
+	background: #0b2743;
+}
+.sub-contact{
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.sub-contact .left{
+	width: 30%;
+	height: auto;
+	margin-left: 60px;
+}
+.sub-contact .left h4{
+	font-size: 22px;
+	font-weight: 200;
+	color: #a5cee0;
+}
+.sub-contact .left .hr{
+	margin-top: 5px;
+	width: 62%;
+}
+.left .nameEmail{
+	
+	color: #fff;
+}
+.left .nameEmail .name input,
+.left .nameEmail .email input,
+.left .message textarea{
+	margin-left: 17px;
+	width: 50%;
+	margin-top: 15px;
+	color: #000000;
+	background: #fff;
+	border: 3px solid #a5cee0;
+	border-radius: 5px;
+	text-align: left;
+	padding: 3px;
+}
+
+.left .message textarea{
+	height: 60px;
+	margin-left: 12%;
+	margin-bottom: 15px;
+	resize: none;
+}
+.left .submit{
+	margin-left: 12%;
+}
+.left .submit input{
+	font-size: 20px;
+	color: #a5cee0;
+	background: #000000;
+	padding: 5px;
+	border: 2px solid #a5cee0;
+	border-radius: 5px;
+}
+.left .submit input[type="reset"]{
+	margin-left: 10px;
+}
+
+
+.sub-contact .right{
+	width: 60%;
+	height: auto;
+}
+.right .icon{
+	display: flex;
+	
+	font-size: 190px;
+}
+.right .icon i{
+	margin-left: 50px;
+}
+.icon .fa-facebook{
+	color: #3178fb;
+}
+.fa-twitter{
+	color: #1392ff;
+}
+.fa-linkedin{
+	color: #5294f9;
+}
+.fa-youtube{
+	color: #ec2727;
+}
+
+.right .mail{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.mail{
+	display: flex;
+}
+.mail .span{
+	background: #124170;
+	color: #ffffff;
+	padding: 5px;
+	border: 2px solid #a5cee0;
+	border-radius: 5px;
+
+}
+.mail .search{
+	margin-left: 10px;
+}
+.mail .search input,
+.mail .search button{
+	padding: 5px;
+	border: 2px solid #a5cee0;
+	border-radius: 5px;
+
+}
+
+/*=====COPYRIGHT SECTION======*/
+.copyright{
+	width: 100%;
+	height: 40px;
+	background: #09223c;
+}
+.copyright .copy{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	font-weight: 100;
+	font-size: 12px;
+	color: #fff;
+}
+
+.copy1{
+	margin-left: 70px;
+}
+.copy2{
+	margin-right: 70px;
+}
+
+
+
+
+
+
